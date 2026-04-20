@@ -38,7 +38,7 @@ export default function Hero() {
               <p>Production-ready projects shipped.</p>
             </article>
             <article className="stat interactive-block reveal reveal-delay-2">
-              <h3>+</h3>
+              <h3>2+</h3>
               <p>Years refining frontend and product UI.</p>
             </article>
             <article className="stat interactive-block reveal reveal-delay-3">

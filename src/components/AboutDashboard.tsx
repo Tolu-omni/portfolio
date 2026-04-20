@@ -18,7 +18,7 @@ export default function AboutDashboard() {
 
           <div className="dash-stats">
             <div className="dash-stat">
-              <strong>4+</strong>
+              <strong>2+</strong>
               <span>Years Building</span>
             </div>
             <div className="dash-stat">
