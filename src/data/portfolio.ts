@@ -18,7 +18,7 @@ export const projects: ProjectItem[] = [
     year: "2026",
     title: "WedPass",
     description:
-      "WedPass is an elegant wedding guest management platform designed for modern ceremonies and private events.",
+      "WedPass is an elegant wedding guest management platform designed for modern ceremonies and private events. It allows hosts to create events, share invite links, and manage real-time guest check-ins in a clean, premium interface.",
     image: "/wedpass.png",
     live: "https://wed-pass.vercel.app",
     github: "https://github.com/Tolu-omni",
@@ -30,7 +30,7 @@ export const projects: ProjectItem[] = [
     year: "2025",
     title: "Portfolio Builder Pro",
     description:
-      "A polished drag-and-drop portfolio generator that helps creators launch personal sites fast.",
+      "A polished drag-and-drop portfolio generator that helps creators launch personal sites fast with themes, CMS controls, and responsive sections.",
     live: "#",
     github: "#",
     extra: "#",
@@ -42,7 +42,7 @@ export const projects: ProjectItem[] = [
     year: "2025",
     title: "Trinity Bank",
     description:
-      "A clean banking dashboard concept focused on clarity, trust, and smooth account management.",
+      "Trinity Bank is a clean banking dashboard concept focused on clarity, trust, and smooth account management. It features balance visibility, transaction history, deposit and transfer actions, bill payment flows, and a polished admin-style layout built for a modern fintech experience.",
     image: "/trinitybank.png",
     live: "https://trinity-bank.netlify.app",
     github: "https://trinity-bank.netlify.app",
@@ -54,7 +54,7 @@ export const projects: ProjectItem[] = [
     year: "2025",
     title: "AI Content Studio",
     description:
-      "An AI-assisted writing workspace for generating content briefs, summaries, outlines, and campaign copy.",
+      "An AI-assisted writing workspace for generating content briefs, summaries, outlines, and campaign copy with a clean editor experience.",
     live: "#",
     github: "#",
     extra: "#",
@@ -66,12 +66,23 @@ export const projects: ProjectItem[] = [
     year: "2026",
     title: "Motion UI Library",
     description:
-      "A reusable component system focused on premium interactions, curved layouts, hover depth, and smooth motion.",
+      "A reusable component system focused on premium interactions, curved layouts, hover depth, and smooth motion patterns for modern product interfaces.",
     live: "#",
     github: "#",
     extra: "#",
     mock: true,
   },
+];
+
+export const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Tailwind",
+  "Framer Motion",
+  "PostgreSQL",
+  "Firebase",
 ];
 
 export const contributionLevels = Array.from({ length: 300 }, (_, i) => {
@@ -82,16 +93,3 @@ export const contributionLevels = Array.from({ length: 300 }, (_, i) => {
   if (rand > 0.26) return 1;
   return 0;
 });
-
-export const skills: string[] = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind",
-  "Node.js",
-  "Vite"
-];
-

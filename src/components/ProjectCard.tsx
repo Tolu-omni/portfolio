@@ -9,32 +9,19 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
+
     const px = (x / rect.width - 0.5) * 2;
     const py = (y / rect.height - 0.5) * 2;
+
     const rotateY = px * 7;
     const rotateX = py * -7;
 
-    const computed = getComputedStyle(card);
-    const baseX = computed.getPropertyValue("--card-x").trim() || "-50%";
-    const baseY = computed.getPropertyValue("--card-y").trim() || "0px";
-    const baseR = computed.getPropertyValue("--card-r").trim() || "0deg";
-
-    card.style.transform = `translate3d(${baseX}, ${baseY}, 0) rotate(${baseR}) perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
 
   const onMouseLeave = (e: MouseEvent<HTMLElement>) => {
     const card = e.currentTarget;
-    if (window.innerWidth <= 980) {
-      card.style.transform = "none";
-      return;
-    }
-
-    const computed = getComputedStyle(card);
-    const baseX = computed.getPropertyValue("--card-x").trim() || "-50%";
-    const baseY = computed.getPropertyValue("--card-y").trim() || "0px";
-    const baseR = computed.getPropertyValue("--card-r").trim() || "0deg";
-
-    card.style.transform = `translate3d(${baseX}, ${baseY}, 0) rotate(${baseR})`;
+    card.style.transform = "perspective(1200px) rotateX(0deg) rotateY(0deg)";
   };
 
   return (
@@ -55,10 +42,15 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
         ) : (
           <div className="mock-window">
             <div className="mock-top">
-              <span></span><span></span><span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
             <div className="mock-lines">
-              <div></div><div></div><div></div><div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
             </div>
           </div>
         )}
@@ -78,7 +70,6 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
           >
             Live Demo
           </a>
-
           <a
             className="project-link"
             href={project.github || "#"}
@@ -87,7 +78,6 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
           >
             GitHub
           </a>
-
           <a className="project-link" href={project.extra || "#"}>
             Details
           </a>
@@ -96,4 +86,3 @@ export default function ProjectCard({ project }: { project: ProjectItem }) {
     </article>
   );
 }
-

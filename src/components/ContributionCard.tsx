@@ -36,11 +36,7 @@ export default function ContributionCard() {
           <span style={{ width: "68%" }}></span>
         </div>
         <p>
-          <a
-            href="https://github.com/Tolu-omni"
-            target="_blank"
-            rel="noopener"
-          >
+          <a href="https://github.com/Tolu-omni" target="_blank" rel="noopener">
             Open GitHub Profile
           </a>
         </p>
@@ -48,4 +44,3 @@ export default function ContributionCard() {
     </article>
   );
 }
-

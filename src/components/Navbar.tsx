@@ -1,8 +1,7 @@
 import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
-  const { toggleTheme } = useTheme();
-  const theme = document.documentElement.getAttribute("data-theme") || "light";
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <nav className="navbar">
