@@ -31,11 +31,10 @@ export const projects: ProjectItem[] = [
     title: "Crown Veterinary Clinic",
     description:
       "A polished veterinary clinic website concept focused on clear service presentation, appointment booking flows, and a friendly, approachable design for pet owners.",
-    image:"/crownvet.png",
+    image: "/crownvet.png",
     live: "https://vet-clinic-gamma.vercel.app",
-    github: "https://github.com/Tolu-omni",
+    github: "https://github.com/Tolu-omni/Vet-Clinic.git",
     extra: "#",
-    mock: true,
   },
   {
     id: 3,
